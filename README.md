@@ -30,6 +30,7 @@ You will also need to run the script as admin.
 
  - If you're using RDP to connect to your Veeam Server, disabling RDS (the first check) will kill RDP on your Veeam Server. This will kick you off the server and stop you from being able to reconnect remotely using RDP. The script warns you of this.
 
- ## Example
+ ## Example Images
  ![Before and After](https://github.com/itfs-steve/veeam-sac-script/blob/main/img/before_after_script_20240119.png)
+ 
  ![Script Output](https://github.com/itfs-steve/veeam-sac-script/blob/main/img/script_ran_20230119.png)
