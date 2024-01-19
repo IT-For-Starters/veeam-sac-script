@@ -24,3 +24,8 @@ You will also need to run the script as admin.
 2. Open Powershell, ```Set-Location``` to your script file location, then run ```.\veeamsecurity.ps1``` 
 3. Run through the script. Wherever something needs to be changed, it will first warn you of the change and prompt for confirmation. Press Y to change, or H to halt that command.
 4. Once finished, it's a good idea to run it again and make sure it all comes back green. If you halt any commands previously, you will be prompted again for them.
+
+
+## Common Oopsies
+
+ - If you're using RDP to connect to your Veeam Server, disabling RDS (the first check) will kill RDP on your Veeam Server. This will kick you off the server and stop you from being able to reconnect remotely using RDP. The script warns you of this.
