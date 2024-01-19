@@ -1,2 +1,24 @@
-# veeam-sac-script
- 
+# Veeam Security & Compliance
+
+This script will enable you to instantly pass all Veeam Security & Compliance checks in Section 1 - Backup Infrastructure Security
+
+## Prerequisites
+You need to allow Powershell scripts to run on the system. The easiest way to do this is to run this **as admin**:
+
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
+
+You will also need to run the script as admin.
+
+## Features
+:white_check_mark: All commands are ran locally, and no outputs are sent to anyone 
+:white_check_mark: All script actions are recorded and logged to C:\VeeamSecurityScript\
+:white_check_mark: All changes need to be confirmed by you first, to stop the script breaking something that you need to keep on (or off) 
+
+## Usage
+
+1. Download the script
+2. Open Powershell, ```Set-Location``` to your script file location, then run ```.\veeamsecurity.ps1``` 
+3. Run through the script. Wherever something needs to be changed, it will first warn you of the change and prompt for confirmation. Press Y to change, or H to halt that command.
+4. Once finished, it's a good idea to run it again and make sure it all comes back green. If you halt any commands previously, you will be prompted again for them.
