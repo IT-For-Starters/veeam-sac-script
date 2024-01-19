@@ -12,9 +12,9 @@ Set-ExecutionPolicy Unrestricted
 You will also need to run the script as admin.
 
 ## Features
-:white_check_mark: All commands are ran locally, and no outputs are sent to anyone 
+:white_check_mark: All commands are ran locally, and no outputs are sent to anyone
 :white_check_mark: All script actions are recorded and logged to C:\VeeamSecurityScript\
-:white_check_mark: All changes need to be confirmed by you first, to stop the script breaking something that you need to keep on (or off) 
+:white_check_mark: All changes need to be confirmed by you first, to stop the script breaking something that you need to keep on (or off)
 
 ## Usage
 
