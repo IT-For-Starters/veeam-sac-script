@@ -4,6 +4,8 @@ This script will enable you to instantly pass all PC-related Security & Complian
 
 This script passes everything in Section 1 - Backup Infrastructure Security
 
+**:exclamation: My testing on this is currently limited, use at own risk**
+
 ## Prerequisites
 You need to allow Powershell scripts to run on the system. The easiest way to do this is to run this **as admin**:
 
