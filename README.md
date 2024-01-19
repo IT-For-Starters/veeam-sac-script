@@ -1,6 +1,7 @@
 # Veeam Security & Compliance
 
-This script will enable you to instantly pass all Veeam Security & Compliance checks in Section 1 - Backup Infrastructure Security
+This script will enable you to instantly pass all PC-related Security & Compliance checks in Veeam Backup & Replication Console
+This script passes everything in Section 1 - Backup Infrastructure Security
 
 ## Prerequisites
 You need to allow Powershell scripts to run on the system. The easiest way to do this is to run this **as admin**:
@@ -32,5 +33,5 @@ You will also need to run the script as admin.
 
  ## Example Images
  ![Before and After](https://github.com/itfs-steve/veeam-sac-script/blob/main/img/before_after_script_20240119.png)
- 
+
  ![Script Output](https://github.com/itfs-steve/veeam-sac-script/blob/main/img/script_ran_20230119.png)
