@@ -17,7 +17,19 @@ Write-Host "======== VEEAM SECURITY AND COMPLIANCE ========" -ForegroundColor Gr
 Write-Host " "   
 Write-Host "TAKE NOTE! This script WILL return errors when it cannot find registry keys. This is expected. Just press Y to create any keys that it cannot find, or press H to skip it."
 Write-Host " "   
-Write-Host " "   
+Write-Host " "  
+
+# Warn about running before Veeam installed
+Write-Host "[GENERAL][WARN] If you run this utility before installing Veeam, you will have issues installing Veeam later."  -ForegroundColor Yellow
+Write-Host "[GENERAL][WARN] You may have issues with apps that use WinRM or WinScriptHost (Server Manager, Veeam Installer, etc.)"  -ForegroundColor Yellow
+try {
+    Write-Warning "Continue?" -WarningAction Inquire
+    Write-Host "[GENERAL][CONFIRM] Proceeding..." -ForegroundColor Green
+}
+catch {
+    Write-Error "[GENERAL][FATAL] You said no. Do what you need to do, then come back."
+    exit 1
+}
 
 
 # Remote Desktop Services
