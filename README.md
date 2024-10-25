@@ -33,6 +33,7 @@ You will also need to run the script as admin.
 ## Common Oopsies
 
  - If you're using RDP to connect to your Veeam Server, disabling RDS (the first check) will kill RDP on your Veeam Server. This will kick you off the server and stop you from being able to reconnect remotely using RDP. The script warns you of this.
+ - Don't run this script before installing Veeam, especially Veeam for M365, as that requires Windows Script Host, which this will kill. If you're using Server Manager, this will kill that too as SM uses WinRM.
 
  ## Example Images
  ![Before and After](https://github.com/itfs-steve/veeam-sac-script/blob/main/img/before_after_script_20240119.png)
